@@ -81,3 +81,15 @@ a {
 .add-cart-button:hover {
   background-color: rgb(250, 184, 16);
 }
+
+@media (max-width: 48rem) {
+  .menu {
+    display: none;
+  }
+  .page-tittle {
+    font-size: 1.5rem;
+  }
+  .latest-products {
+    grid-template-columns: 100%;
+  }
+}
