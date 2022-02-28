@@ -22,6 +22,21 @@ a {
   font-weight: bold;
 }
 
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
 .menu {
   display: flex;
   gap: 2rem;
@@ -34,6 +49,40 @@ a {
 
 .menu a:hover {
   color: rgb(211, 169, 33);
+}
+
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29, 26, 27);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+.side-drawer-header {
+  padding: 2rem;
+  background-color: rgb(29, 25, 16);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.side-drawer--menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem 1rem;
+}
+
+.side-drawer--menu a {
+  color: white;
+  font-size: 2rem;
 }
 
 .page-tittle {
@@ -85,6 +134,10 @@ a {
 @media (max-width: 48rem) {
   .menu {
     display: none;
+  }
+
+  .menu-btn {
+    display: flex;
   }
   .page-tittle {
     font-size: 1.5rem;
